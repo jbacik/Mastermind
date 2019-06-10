@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29001.49
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mastermind.App", "Mastermind.App\Mastermind.App.csproj", "{16777A97-7B78-4BA4-A411-C950066936AE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F57BA2C1-D018-4C4C-B807-FE7E73CB28D9}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mastermind.Tests", "Mastermind.Tests\Mastermind.Tests.csproj", "{841A33A6-78E4-4D46-AD5A-5F9FABCF451C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{16777A97-7B78-4BA4-A411-C950066936AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16777A97-7B78-4BA4-A411-C950066936AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16777A97-7B78-4BA4-A411-C950066936AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16777A97-7B78-4BA4-A411-C950066936AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{841A33A6-78E4-4D46-AD5A-5F9FABCF451C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{841A33A6-78E4-4D46-AD5A-5F9FABCF451C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{841A33A6-78E4-4D46-AD5A-5F9FABCF451C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{841A33A6-78E4-4D46-AD5A-5F9FABCF451C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5EDF666F-0DBC-4CC0-B1F8-A868DDF74E4B}
+	EndGlobalSection
+EndGlobal
