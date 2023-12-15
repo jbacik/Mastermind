@@ -1,0 +1,141 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace beadando_szinozon4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            List<int> code = new List<int>();
+            Random r = new Random();
+            List<int> tippek = new List<int>();
+            for(int i = 0; i<4; i++)
+            {
+                code.Add(r.Next(1, 7));
+            }
+            for(int i =0; i < 7; i++)
+            {
+                for(int j = 0; j < 4; j++)
+                {
+                    tippek.Add(r.Next(1, 7));
+                }
+            }
+           
+            for(int i = 0; i < 4; i++)
+            {
+                int joTipp = 0;
+                int joSzin = 0;
+                if (tippek[i] == code[i])
+                {
+                    joTipp++;
+                }if(code.Contains(tippek[i])&& tippek[i] != code[i])
+                {
+                    joSzin++;
+                }
+            }
+            for (int i = 0; i < 4; i++)
+            {
+                int joTipp = 0;
+                int joSzin = 0;
+                if (tippek[i+4] == code[i])
+                {
+                    joTipp++;
+                }
+                if (code.Contains(tippek[i]) && tippek[i] != code[i])
+                {
+                    joSzin++;
+                }
+            }
+            for (int i = 0; i < 4; i++)
+            {
+                int joTipp = 0;
+                int joSzin = 0;
+                if (tippek[i+8] == code[i])
+                {
+                    joTipp++;
+                }
+                if (code.Contains(tippek[i]) && tippek[i] != code[i])
+                {
+                    joSzin++;
+                }
+            }
+            for (int i = 0; i < 4; i++)
+            {
+                int joTipp = 0;
+                int joSzin = 0;
+                if (tippek[i+12] == code[i])
+                {
+                    joTipp++;
+                }
+                if (code.Contains(tippek[i]) && tippek[i] != code[i])
+                {
+                    joSzin++;
+                }
+            }
+            for (int i = 0; i < 4; i++)
+            {
+                int joTipp = 0;
+                int joSzin = 0;
+                if (tippek[i+16] == code[i])
+                {
+                    joTipp++;
+                }
+                if (code.Contains(tippek[i]) && tippek[i] != code[i])
+                {
+                    joSzin++;
+                }
+            }
+            for (int i = 0; i < 4; i++)
+            {
+                int joTipp = 0;
+                int joSzin = 0;
+                if (tippek[i+20] == code[i])
+                {
+                    joTipp++;
+                }
+                if (code.Contains(tippek[i]) && tippek[i] != code[i])
+                {
+                    joSzin++;
+                }
+            }
+            for (int i = 0; i < 4; i++)
+            {
+                int joTipp = 0;
+                int joSzin = 0;
+                if (tippek[i+24] == code[i])
+                {
+                    joTipp++;
+                }
+                if (code.Contains(tippek[i]) && tippek[i] != code[i])
+                {
+                    joSzin++;
+                }
+            }
+
+            string kodhelyettes;
+            string vegkodelyettes;
+            string vegleges = "";
+            for(int i = 0; i <= 7777; i++)
+            {
+               
+                kodhelyettes = i.ToString().PadLeft(4, '0');
+                vegkodelyettes = string.Join("", kodhelyettes.Where(a => !kodhelyettes.Contains('9') && !kodhelyettes.Contains('8')));
+                if(vegkodelyettes.Length > 0)
+                {
+                    vegleges = vegkodelyettes;
+                    
+                }
+
+
+
+                Console.WriteLine(vegleges);
+            }
+            
+            Console.ReadLine();
+        }
+    }
+}
